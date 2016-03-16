@@ -197,6 +197,9 @@ a:visited{
 	float: right;
 }
 
+.project-3{
+	float: left;
+}
 .arrow{
 	margin: 50px 0 50px 0; 
 	width: 50px; 
