@@ -1,0 +1,288 @@
+/************************
+	COLORS USED
+
+#E4DBBF -- Greyish
+#DC5B21 -- Reddish
+#70AB8F -- Coral
+#383127 -- Blackish
+*************************/
+
+
+/************************
+	  BASE STYLES
+*************************/
+*{
+	box-sizing: border-box;
+}
+
+header{
+	background-color: #E4DBBF;
+}
+
+body{
+	font-family: 'Gudea', Arial, sans-serif; 
+	margin: 0;
+	color:#383127;
+	background-color: #E4DBBF;
+	font-size: 1.2em; 
+}
+
+h1{
+	font-size: 5.3125em;	/*85px/16px*/
+	text-transform: uppercase;
+	color: #E4DBBF;
+	text-shadow: 2px 3px 4px #70AB8F; 
+}
+
+
+h2{
+	font-size: 2.8125em; /*45px/16px*/
+}
+
+h3{
+	font-size: 1.41em;	/*22.5px/16px*/
+}
+
+img{
+	max-width: 100%; 
+}
+
+
+/************************
+	 MAIN STYLES
+*************************/
+.main-header {
+	height: 450px; 
+	padding-top: 500px; 
+	background: 	
+					linear-gradient(#DC5B21, transparent 60%), 
+  					linear-gradient(10deg, #E4DBBF, transparent),
+					#E4DBBF url('../img/mountrainier.jpg') no-repeat center; 
+	background-size: cover; 
+}
+
+.name{
+	padding-top: 160px; 
+}
+
+.main-header, 
+.primary-content, 
+.main-footer{
+	text-align: center; 
+}
+
+/*.primary-content{*/
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: contain;
+	box-sizing: border-box;
+}
+
+.title{
+	font-color: white;
+	font-size: 2.65em; /*20px/16px*/
+}
+
+.border{ 
+	border-top: 7px solid #70AB8F;
+}
+
+.logo{
+	background-color: #E4DBBF;
+}
+
+
+/************************
+	 PSEUDO-CLASSES
+*************************/
+a:link{
+	text-decoration: none; 
+	color: #DC5B21;
+}
+
+a:hover{
+	color: #383127;
+}
+
+a:visited{
+	color: #DC5B21; 
+}
+
+.arrow{
+	background: none; 
+}
+
+.arrow:hover{
+	background-color: #383127;
+}
+
+/************************
+	 LAYOUT STYLES
+*************************/
+
+.primary-content, 
+.secondary-content{
+	width: 75%;
+	padding-right: 30px; 
+	padding-left: 30px;
+	margin: auto; 
+	max-width: 900px; 
+}
+
+.primary-content{
+	margin-top: 50px;  
+	padding-top: 50px; 
+	max-height: 600px; 
+}
+
+.callout{
+	font-size: 1.25em; 
+	border-bottom: 3px solid; 
+	padding: 0 0 3px 0; 
+	margin-top: 10px; 
+	display: inline-block;
+}
+
+.work{
+	text-align: center; 
+	margin-top: 15px; 
+}
+
+.secondary-content{
+	margin-top: 90px; 	
+	border-bottom: 7px solid #70AB8F; 
+	padding: 50px 0 90px 0; 
+}
+
+.main-footer{
+	margin-top: 50px; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+	border-bottom: 10px solid #DC5B21; 
+}
+
+.twitter, 
+.facebook, 
+.github{
+	display: inline-block;
+	width: 20px; 
+	height: 20px; 
+	margin: 0 5px; 
+}
+/************************
+	 FLOATED COLUMNS
+*************************/
+
+.project-1, 
+.project-2,
+.project-3
+	{
+	width: 46.5%;
+}
+
+.project-1{
+	float: left; 
+}
+
+.google, 
+.android, 
+.donuts{
+	border: 2px solid #70AB8F; 
+	border-radius: 40%; 
+}
+
+
+.project-2{
+	float: right;
+}
+
+.arrow{
+	margin: 50px 0 50px 0; 
+	width: 50px; 
+}
+
+
+/************************
+	 	CLEARFIX
+*************************/
+.group:after{
+	content:"";
+	display: table; 
+	clear: both;
+}
+
+
+/************************
+	 MEDIA QUERIES
+*************************/
+
+@media (max-width: 568px) {
+
+	h1{
+		font-size: 3em; 
+	}
+
+	h2{
+		font-size: 2em; 
+	}
+
+	.arrow{
+		display: none; 
+	}
+
+	.border{
+		border-top: 7px solid #E4DBBF;
+
+	}
+
+	.logo{
+		width: 50%; 
+	}
+
+	.main-header h1{
+		padding-top: 200px; 
+	}
+
+	.main-header {
+	background: 	
+					linear-gradient(#DC5B21, transparent 60%), 
+  					linear-gradient(10deg, #E4DBBF, transparent),
+					#E4DBBF url('../img/mountains.jpg') no-repeat center; 
+	background-size: cover; 
+}
+	.primary-content{
+		padding: 0 0 30px 0; 
+		border-bottom: 4px solid #70AB8F; 
+	}
+	
+	.secondary-content{
+		margin: auto; 
+		padding: 0; 
+		width: 100%; 
+		border-bottom: 7px solid #E4DBBF; 
+	}
+
+	.work{
+		font-size: 2em; 
+	}
+
+	.project-1, 
+	.project-2{
+		text-align: center; 
+		width: 80%; 
+		float: none; 
+		margin: auto; 
+	}
+
+}
+
+@media (max-width: 1800px) {
+
+	.main-header{
+		padding-top: 87.5px; 
+		height: 1000px; 
+	}
+
+
+	}
